@@ -45,7 +45,7 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('test', session_name());
 
         $params = [
-            'lifetime' => 7200,
+            'lifetime' => 1800,
             'path'     => '/',
             'domain'   => 'mydomain.com',
             'secure'   => false,
