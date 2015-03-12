@@ -8,7 +8,7 @@ class SessionMiddleware extends Middleware
 {
     protected $name = 'Juliangut/Session';
 
-    protected $lifetime = 7200;
+    protected $lifetime = 1800; //30 minutes
 
     protected $path = '/';
 
