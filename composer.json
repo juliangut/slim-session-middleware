@@ -23,7 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Juliangut\\SlimSessMiddleware": "src/"
+            "Jgut\\Slim\\Middleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jgut\\Slim\\MiddlewareTests\\": "tests/MiddlewareTests/"
         }
     }
 }
