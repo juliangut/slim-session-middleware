@@ -6,7 +6,7 @@ use Slim\Middleware;
 
 class SessionMiddleware extends Middleware
 {
-    protected $name = 'Juliangut/Session';
+    protected $name = 'JgutSession';
 
     protected $lifetime = 1800; //30 minutes
 
