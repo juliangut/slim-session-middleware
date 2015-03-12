@@ -1,0 +1,29 @@
+{
+    "name": "juliangut/slim-sess-middleware",
+    "description": "Slim Framework session handler middleware",
+    "keywords": [
+        "slim",
+        "framework",
+        "middleware",
+        "session"
+    ],
+    "homepage": "http://github.com/juliangut/slim-session-middleware",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Julián Gutiérrez",
+            "email": "juliangut@gmail.com",
+            "homepage": "http://juliangut.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "slim/slim": "~2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Juliangut\\SlimSessMiddleware": "src/"
+        }
+    }
+}

@@ -1,1 +1,1 @@
-# slim-sess
+# slim-sess-middleware
