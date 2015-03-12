@@ -1,5 +1,5 @@
 {
-    "name": "juliangut/slim-sess-middleware",
+    "name": "juliangut/slim-session-middleware",
     "description": "Slim Framework session handler middleware",
     "keywords": [
         "slim",

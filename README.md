@@ -7,7 +7,7 @@ Session handler middleware for Slim Framework.
 Best way to install is to using [Composer](https://getcomposer.org/):
 
 ```
-composer require juliangut/slim-sess-middleware
+composer require juliangut/slim-session-middleware
 ```
 
 Then require_once the autoload file:
