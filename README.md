@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/juliangut/slim-session-middleware.svg?branch=master)](https://travis-ci.org/juliangut/slim-session-middleware)
+[![Coverage Status](https://coveralls.io/repos/juliangut/slim-session-middleware/badge.png?branch=master)](https://coveralls.io/r/juliangut/zf-maintenance)
+[![Latest Stable Version](https://poser.pugx.org/juliangut/slim-session-middleware/v/stable.svg)](https://packagist.org/packages/juliangut/zf-maintenance)
+[![Total Downloads](https://poser.pugx.org/juliangut/slim-session-middleware/downloads.svg)](https://packagist.org/packages/juliangut/slim-session-middleware)
+
 # Juliangut Slim Framework session handler middleware
 
 Session handler middleware for Slim Framework.

@@ -16,7 +16,7 @@
         verbose="true"
         >
     <testsuites>
-        <testsuite name="Slim Framework session handler middleware tests">
+        <testsuite name="Slim Framework session handler middleware PHPUnit tests">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
