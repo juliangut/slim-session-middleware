@@ -18,7 +18,7 @@ composer require juliangut/slim-session-middleware
 Then require_once the autoload file:
 
 ```php
-require_once 'vendor/autoload.php';
+require_once './vendor/autoload.php';
 ```
 
 ## Usage
