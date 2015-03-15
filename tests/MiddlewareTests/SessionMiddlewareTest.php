@@ -1,6 +1,6 @@
 <?php
 /**
- * Slim Framework session handler middleware (https://github.com/juliangut/zf-maintenance)
+ * Slim Framework session handler middleware (https://github.com/juliangut/slim-session-middleware)
  *
  * @link https://github.com/juliangut/slim-session-middleware for the canonical source repository
  * @license https://raw.githubusercontent.com/juliangut/slim-session-middleware/master/LICENSE
