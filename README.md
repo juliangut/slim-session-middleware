@@ -10,10 +10,10 @@ Session handler middleware for Slim Framework.
 
 ## Installation
 
-Best way to install is to using [Composer](https://getcomposer.org/):
+Best way to install is using [Composer](https://getcomposer.org/):
 
 ```
-composer require juliangut/slim-session-middleware
+php composer.phar require juliangut/slim-session-middleware
 ```
 
 Then require_once the autoload file:
