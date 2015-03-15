@@ -36,8 +36,8 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
      * @covers Jgut\Slim\Middleware\SessionMiddleware::getLifetime
      * @covers Jgut\Slim\Middleware\SessionMiddleware::getPath
      * @covers Jgut\Slim\Middleware\SessionMiddleware::getDomain
-     * @covers Jgut\Slim\Middleware\SessionMiddleware::getSecure
-     * @covers Jgut\Slim\Middleware\SessionMiddleware::getHttponly
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::isSecure
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::isHttponly
      */
     public function testGetterSetter()
     {
@@ -53,8 +53,8 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(12, $session->getLifetime());
         $this->assertEquals('home', $session->getPath());
         $this->assertEquals('mydomain.com', $session->getDomain());
-        $this->assertEquals(true, $session->getSecure());
-        $this->assertEquals(true, $session->getHttponly());
+        $this->assertEquals(true, $session->isSecure());
+        $this->assertEquals(true, $session->isHttponly());
     }
 
     /**

@@ -147,7 +147,7 @@ class SessionMiddleware extends Middleware
      *
      * @return bool
      */
-    public function getSecure()
+    public function isSecure()
     {
         return $this->secure;
     }
@@ -169,7 +169,7 @@ class SessionMiddleware extends Middleware
      *
      * @return bool
      */
-    public function getHttponly()
+    public function isHttponly()
     {
         return $this->httponly;
     }
@@ -228,8 +228,8 @@ class SessionMiddleware extends Middleware
             'lifetime' => $this->getLifetime() ?: $sessParams['lifetime'],
             'path'     => $this->getPath() ?: $sessParams['path'],
             'domain'   => $this->getDomain() ?: $sessParams['domain'],
-            'secure'   => $this->getSecure(),
-            'httponly' => $this->getHttponly(),
+            'secure'   => $this->isSecure(),
+            'httponly' => $this->isHttponly(),
         ];
     }
 }
