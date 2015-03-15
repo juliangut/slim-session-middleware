@@ -36,3 +36,9 @@ $app->add((new SessionMiddleware())
     ->lifetime(4800)
 );
 ```
+
+## License
+
+### Release under BSD-3-Clause License.
+
+See file [LICENSE](https://github.com/juliangut/slim-session-middleware/blob/master/LICENSE) included with the source code for a copy of the license terms

@@ -1,11 +1,23 @@
 <?php
+/**
+ * Slim Framework session handler middleware (https://github.com/juliangut/zf-maintenance)
+ *
+ * @link https://github.com/juliangut/slim-session-middleware for the canonical source repository
+ * @license https://raw.githubusercontent.com/juliangut/slim-session-middleware/master/LICENSE
+ */
 
 namespace Jgut\Slim\MiddlewareTests;
 
 use Jgut\Slim\Middleware\SessionMiddleware;
 
+/**
+ * @covers Jgut\Slim\Middleware\SessionMiddleware
+ */
 class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * Remove previously started sessions.
+     */
     public function setUp()
     {
         if (in_array(session_status(), [PHP_SESSION_DISABLED, PHP_SESSION_ACTIVE])) {
@@ -13,6 +25,20 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
         }
     }
 
+    /**
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setName
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setLifetime
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setPath
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setDomain
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setSecure
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setHttponly
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getName
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getLifetime
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getPath
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getDomain
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getSecure
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::getHttponly
+     */
     public function testGetterSetter()
     {
         $session = (new SessionMiddleware())
@@ -31,6 +57,11 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $session->getHttponly());
     }
 
+    /**
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setName
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setDomain
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::start
+     */
     public function testSessionParams()
     {
         $session = (new SessionMiddleware())
@@ -54,6 +85,10 @@ class SessionMiddlewareTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($params, session_get_cookie_params());
     }
 
+    /**
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::setName
+     * @covers Jgut\Slim\Middleware\SessionMiddleware::start
+     */
     public function testAlreadyStartedSession()
     {
         session_name('original');
