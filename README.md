@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/juliangut/slim-session-middleware.svg?branch=master)](https://travis-ci.org/juliangut/slim-session-middleware)
+[![Code Climate](https://codeclimate.com/github/juliangut/slim-session-middleware/badges/gpa.svg)](https://codeclimate.com/github/juliangut/slim-session-middleware)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/juliangut/slim-session-middleware/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/juliangut/slim-session-middleware/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/juliangut/slim-session-middleware/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/juliangut/slim-session-middleware/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/juliangut/slim-session-middleware/v/stable.svg)](https://packagist.org/packages/juliangut/slim-session-middleware)
