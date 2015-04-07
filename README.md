@@ -38,6 +38,12 @@ $app->add((new SessionMiddleware())
 );
 ```
 
+## Contributing
+
+Found a bug or have a feature request? [Please open a new issue](https://github.com/juliangut/slim-session-middleware/issues). Have a look at existing issues before
+
+See file [CONTRIBUTING.md](https://github.com/juliangut/slim-session-middleware/blob/master/CONTRIBUTING.md)
+
 ## License
 
 ### Release under BSD-3-Clause License.
